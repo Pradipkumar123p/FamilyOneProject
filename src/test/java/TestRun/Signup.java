@@ -1,9 +1,11 @@
 package TestRun;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -15,15 +17,15 @@ import Resources.ConstantMethod;
 
 public class Signup extends BaseClass{
 	
-	@Test(invocationCount = 1)
+	@Test(invocationCount = 3)
 	void Runsignup() throws InterruptedException   {
 		
 		FamilypageobjectModel obj = new FamilypageobjectModel(driver);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		Thread.sleep(10000);
+		Thread.sleep(4000);
 		obj.signup().click();
-		Thread.sleep(10000);
+		Thread.sleep(4000);
 		obj.signup1().click();
 		
 		obj.firstname().sendKeys(ConstantMethod.firstname);
@@ -40,7 +42,7 @@ public class Signup extends BaseClass{
 	    	System.out.println("valid email");
 		}
 		
-	    Thread.sleep(10000);
+	    Thread.sleep(4000);
 	    obj.continues().click();
 	    
 //webDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -52,11 +54,11 @@ public class Signup extends BaseClass{
 	
 		CommonMethod.handleselection(obj.selectgender(), "Male",driver);
 		
-		Thread.sleep(10000);
+		Thread.sleep(4000);
 		obj.housenb().click();
 		obj.address().sendKeys("1");
 		
-		Thread.sleep(10000);
+		Thread.sleep(4000);
 		CommonMethod.handleselection1(obj.addressfetch(), 5);
 		
 		obj.continue1().click();
@@ -73,28 +75,82 @@ public class Signup extends BaseClass{
 		
 		CommonMethod.clickablepoint(obj.clickcalender(), driver);
 		
-		CommonMethod.handleselection(obj.selectyear(),"2024",driver);
+	//	CommonMethod.handleselection(obj.selectyear(),"2024",driver);
 		
-        CommonMethod.handleselection(obj.selectmonth(),"Jun",driver);
-	//ommonMethod.clickablepoint(obj.selectmonth(),driver);
-
-     driver.navigate().refresh();
+     //   CommonMethod.handleselection(obj.selectmonth(),"Jun",driver);
+	 //   CommonMethod.clickablepoint(obj.selectmonth(),driver);
+		
+     /*
+       driver.navigate().refresh();
 
     try  {
-    	
-    	CommonMethod.handleselection(obj.selectmonth(),"Jun",driver);
+    	Thread.sleep(2000);
+    	CommonMethod.clickablepoint(driver.findElement(By.xpath("((//div[@class='MuiDialog-root']//div//div)[5]//div//div)[5]")), driver);
     }
     catch (Exception e) {
 		
-    	System.out.println("success");
-	}
+    	Thread.sleep(5000);
+    	WebElement a = driver.findElement(By.xpath("((//div[@class='MuiDialog-root']//div//div)[5]//div//div)[5]"));
+    	
+    		Thread.sleep(2000);
+    		CommonMethod.clickablepoint(a, driver);
+    	
+	}       
+	
+	  */
 		
 		
-	    CommonMethod.handleselection(obj.selectdate(), "5",driver);
+	//    CommonMethod.handleselection(obj.selectdate(), "5",driver);
+		
+	//	obj.clickok().click();
+		
+	//	obj.clickcontinue2().click();
+		
+		obj.clickcmonthdate().click();
+		
+		String monthname ="";
+		
+		while(!(monthname.equals("April 2024")))  {
+			
+			obj.clicknext().click();
+			Thread.sleep(2000);
+			obj.matchtitle();
+			
+			monthname = obj.matchtitle().getText();
+			
+		}
+		
+		
+		CommonMethod.handleselection(obj.selectdate(), "7", driver);
 		
 		obj.clickok().click();
 		
 		obj.clickcontinue2().click();
+		
+	/*	obj.clickcplus().click();
+		
+		obj.clickexpect().click();
+		
+		obj.entername2().clear();
+		obj.entername2().sendKeys(ConstantMethod.name1);
+		Thread.sleep(1000);
+		CommonMethod.handleselection(obj.selectgender2(), "Boy", driver);
+		Thread.sleep(1000);
+		CommonMethod.clickablepoint(obj.clickcanlender1(), driver);
+		Thread.sleep(1000);
+		obj.clickcmonthdate().click();   */
+		
+		
+		
+		
+		obj.clicknext1().click();
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

@@ -28,11 +28,19 @@ public class FamilypageobjectModel {
 	By name1 = By.xpath("//input[@placeholder='Name']");
 	By gender1 = By.xpath("//div[@class='addchild_gender']//button//span");
 	By calender = By.xpath("(//input[@aria-invalid='false'])[2]");
-	By year = By.xpath("//div[@class='MuiPickersBasePicker-pickerView']//div");
-	By month = By.xpath("(//div[@class='MuiDialog-root']//div//div)[5]//div//div");
-	By date = By.xpath("//div[@class='MuiPickersBasePicker-pickerView']//div//div//div//div");
+	By mnthdate = By.xpath("//span[@class='MuiButton-label']//h4");
+	By next = By.xpath("(//span[@class='MuiIconButton-label'])[1]");
+	By title = By.xpath("//div[@class='MuiPickersSlideTransition-transitionContainer MuiPickersCalendarHeader-transitionContainer']//p");
+	By date = By.xpath("//div[@class='MuiPickersSlideTransition-transitionContainer MuiPickersCalendar-transitionContainer']//div//div//div");
 	By ok = By.xpath("//span[contains(text(),'OK')]");
 	By continue1 = By.xpath("//span[contains(text(),'Continue')]");
+	By plus = By.xpath("//a[@class='cstmChild']//div");
+	By expect = By.xpath("//div[@class='unchild_rght expct_child']");
+	By name2 = By.xpath("//input[@placeholder='Name']");
+	By gender2 = By.xpath("//div[@class='addchild_gender']//button");
+	By calender1 = By.xpath("(//div[@class='MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl']//input)[2]");
+	
+	By next1 = By.xpath("//span[contains(text(),'Next')]");
 	
 	
 	
@@ -163,37 +171,77 @@ public class FamilypageobjectModel {
 	}
    
    
-   public List<WebElement> selectyear ()  {
-	   
-	   return driver.findElements(year);
-   }
+   public WebElement clickcmonthdate()  {
+		
+		return driver.findElement(mnthdate);
+	}
    
    
-   public List<WebElement> selectmonth ()  {
-	   
-	   return driver.findElements(month);
-   }
+   public WebElement clicknext()  {
+		
+		return driver.findElement(next);
+	}
+  
+   
+   public WebElement matchtitle()  {
+		
+		return driver.findElement(title);
+	}
    
    
-  public List<WebElement> selectdate ()  {
+    public List<WebElement> selectdate ()  {
 	   
 	   return driver.findElements(date);
    }
    
    
-  public WebElement clickok()  {
+   public WebElement clickok()  {
 		
 		return driver.findElement(ok);
 	}
+    
   
-  
-  public WebElement clickcontinue2()  {
+    public WebElement clickcontinue2()  {
 		
 		return driver.findElement(continue1);
 	}
+    
+    public WebElement clickcplus()  {
+		
+ 		return driver.findElement(plus);
+ 	}
+    
+    
+   public WebElement entername2()  {
+		
+		return driver.findElement(name2);
+	}
+   
+   
+   public WebElement clickexpect()  {
+		
+ 		return driver.findElement(expect);
+ 	}
+   
+   
+   public List<WebElement> selectgender2 ()  {
+	   
+	   return driver.findElements(gender2);
+   }
+     
+   
+   public WebElement clickcanlender1()  {
+		
+ 		return driver.findElement(calender1);
+ 	}
+    
+    
   
   
-  
+   public WebElement clicknext1()  {
+		
+		return driver.findElement(next1);
+	}
   
   
    

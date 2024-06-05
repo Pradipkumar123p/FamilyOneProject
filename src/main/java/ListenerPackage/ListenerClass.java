@@ -20,13 +20,13 @@ public class ListenerClass extends ExtendManager implements ITestListener{
 		
 	if(result.getStatus() == ITestResult.SUCCESS);
 	
-	     test.log(Status.PASS, "Test case passed is" + result.getName());
+	     test.log(Status.PASS, "Test case passed is - " + result.getName());
 	   }
 	public void onTestFailure(ITestResult result) {
 		
 	  if (result.getStatus() == ITestResult.FAILURE) {
 
-	       test.log(Status.FAIL, "Test CASE Failed is " + result.getName()); 
+	       test.log(Status.FAIL, "Test CASE Failed is - " + result.getName()); 
 
 	       test.log(Status.FAIL, "Test CASE Failed is " + result.getThrowable()); 
 
@@ -50,7 +50,7 @@ public class ListenerClass extends ExtendManager implements ITestListener{
 		
 	if (result.getStatus() == ITestResult.SKIP) {
 		
-	     test.log(Status.SKIP, "test case skipped is" + result.getName());
+	     test.log(Status.SKIP, "test case skipped is - " + result.getName());
 	     
 	    }
 
