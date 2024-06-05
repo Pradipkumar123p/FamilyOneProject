@@ -17,15 +17,15 @@ import Resources.ConstantMethod;
 
 public class Signup extends BaseClass{
 	
-	@Test(invocationCount = 3)
+	@Test(invocationCount = 1)
 	void Runsignup() throws InterruptedException   {
 		
 		FamilypageobjectModel obj = new FamilypageobjectModel(driver);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		obj.signup().click();
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		obj.signup1().click();
 		
 		obj.firstname().sendKeys(ConstantMethod.firstname);
@@ -42,7 +42,7 @@ public class Signup extends BaseClass{
 	    	System.out.println("valid email");
 		}
 		
-	    Thread.sleep(4000);
+	    Thread.sleep(1000);
 	    obj.continues().click();
 	    
 //webDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -54,11 +54,11 @@ public class Signup extends BaseClass{
 	
 		CommonMethod.handleselection(obj.selectgender(), "Male",driver);
 		
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		obj.housenb().click();
 		obj.address().sendKeys("1");
 		
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		CommonMethod.handleselection1(obj.addressfetch(), 5);
 		
 		obj.continue1().click();
@@ -70,7 +70,7 @@ public class Signup extends BaseClass{
 		obj.entername().clear();
 		obj.entername().sendKeys(ConstantMethod.firstname);
 		
-	    Thread.sleep(2000);
+	    Thread.sleep(1000);
 		CommonMethod.handleselection(obj.genderselect1(),"Boy",driver);
 		
 		CommonMethod.clickablepoint(obj.clickcalender(), driver);
@@ -113,7 +113,7 @@ public class Signup extends BaseClass{
 		while(!(monthname.equals("April 2024")))  {
 			
 			obj.clicknext().click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			obj.matchtitle();
 			
 			monthname = obj.matchtitle().getText();
@@ -127,7 +127,7 @@ public class Signup extends BaseClass{
 		
 		obj.clickcontinue2().click();
 		
-	/*	obj.clickcplus().click();
+		obj.clickcplus().click();
 		
 		obj.clickexpect().click();
 		
@@ -138,10 +138,25 @@ public class Signup extends BaseClass{
 		Thread.sleep(1000);
 		CommonMethod.clickablepoint(obj.clickcanlender1(), driver);
 		Thread.sleep(1000);
-		obj.clickcmonthdate().click();   */
+		obj.clickcmonthdate().click();   
 		
+        String monthname1 ="";
 		
+		while(!(monthname1.equals("September 2024")))  {
+			
+			obj.clicknext2().click();
+			Thread.sleep(1000);
+			obj.matchtitle1();
+			
+			monthname1 = obj.matchtitle1().getText();
+			
+		}
 		
+		CommonMethod.handleselection(obj.selectdate(), "8", driver);
+		
+		obj.clickok().click();
+		
+		obj.clickcontinue2().click();
 		
 		obj.clicknext1().click();
 		

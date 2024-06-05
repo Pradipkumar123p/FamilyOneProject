@@ -39,6 +39,8 @@ public class FamilypageobjectModel {
 	By name2 = By.xpath("//input[@placeholder='Name']");
 	By gender2 = By.xpath("//div[@class='addchild_gender']//button");
 	By calender1 = By.xpath("(//div[@class='MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl']//input)[2]");
+	By next2 = By.xpath("(//button[@class='MuiButtonBase-root MuiIconButton-root MuiPickersCalendarHeader-iconButton'])[2]");
+	By title1 = By.xpath("//div[@class='MuiPickersSlideTransition-transitionContainer MuiPickersCalendarHeader-transitionContainer']//p");	
 	
 	By next1 = By.xpath("//span[contains(text(),'Next')]");
 	
@@ -235,7 +237,17 @@ public class FamilypageobjectModel {
  		return driver.findElement(calender1);
  	}
     
-    
+   public WebElement clicknext2()  {
+		
+		return driver.findElement(next2);
+	}
+   
+   
+   public WebElement matchtitle1()  {
+		
+		return driver.findElement(title1);
+	}
+   
   
   
    public WebElement clicknext1()  {
