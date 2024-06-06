@@ -10,6 +10,7 @@ public class FamilypageobjectModel {
 	
   protected WebDriver driver;
 	
+  //Signup function
 	By sign = By.xpath("(//a[normalize-space()='Log In / Sign Up'])[1]");
 	By sign1 = By.xpath("//span[normalize-space()='Sign Up']");
 	By first  = By.xpath("//input[@placeholder='First Name']");
@@ -41,15 +42,27 @@ public class FamilypageobjectModel {
 	By calender1 = By.xpath("(//div[@class='MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl']//input)[2]");
 	By next2 = By.xpath("(//button[@class='MuiButtonBase-root MuiIconButton-root MuiPickersCalendarHeader-iconButton'])[2]");
 	By title1 = By.xpath("//div[@class='MuiPickersSlideTransition-transitionContainer MuiPickersCalendarHeader-transitionContainer']//p");	
-	
 	By next1 = By.xpath("//span[contains(text(),'Next')]");
 	
 	
-	
+	//Signup by another way
 	By slide = By.xpath("(//div[@class='swiper-pagination swiper-pagination-clickable swiper-pagination-bullets']//span)[3]");
 	By image = By.xpath("(//div[@id='root']//div//div//div//div//div//div//div//div//div//div//div//div//div//div//div//div//div//div//div[@class='program_slides slides 4680']//img)[1]");
 	By image1 = By.xpath("//div[@class='session_hendupr']");
 	By sign2 = By.xpath("//span[contains(text(),'Sign Up')]");
+	
+	
+	
+	//SignIn
+	By login = By.xpath("(//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary'])[2]");
+	By emailf = By.xpath("//input[@placeholder='Email Address']");
+	By login1 = By.xpath("//span[contains(text(),'Log in')]");
+	By username = By.xpath("//div[@class='v-TextInput-control']//input");
+	By password = By.xpath("//input[@type='password']");
+	By checkbox = By.xpath("//div[@class='v-Checkbox-icon']");
+	By login3 = By.xpath("//span[contains(text(),'Log in')]");
+	
+	
 	
 	
 	
@@ -63,7 +76,7 @@ public class FamilypageobjectModel {
 
 
 
-	public WebElement signup()  {
+	public WebElement signuplogin()  {
 		
 		return driver.findElement(sign);
 	}
@@ -283,6 +296,55 @@ public class FamilypageobjectModel {
 		return driver.findElement(sign2);
 	}
 	
+   
+   
+   
+   
+   
+   public WebElement clicklogin()  {
+		
+		return driver.findElement(login);
+	}
+   
+   
+   public WebElement enteremailf()  {
+		
+ 		return driver.findElement(emailf);
+ 	}
+   
+   
+   public WebElement clicklogin1()  {
+		
+		return driver.findElement(login1);
+	}
+   
+   public WebElement enteruser()  {
+		
+		return driver.findElement(username);
+	}
+   
+   
+   
+   public WebElement enterpassword()  {
+		
+		return driver.findElement(password);
+	}
+   
+   
+   public WebElement clickcheckbox()  {
+		
+		return driver.findElement(checkbox);
+	}
+   
+   
+   public WebElement clicklogin3()  {
+		
+		return driver.findElement(login3);
+	}
+   
+   
+   
+   
    
    
    

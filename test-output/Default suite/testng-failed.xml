@@ -7,8 +7,8 @@
         <methods>
           <include name="aftersuite"/>
           <include name="openURL"/>
-          <include name="Runsignup"/>
           <include name="teardown"/>
+          <include name="Verifysignup"/>
           <include name="beforesuite"/>
         </methods>
       </class> <!-- TestRun.Signup -->

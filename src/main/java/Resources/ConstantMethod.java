@@ -8,5 +8,9 @@ public class ConstantMethod {
     public static String email2 = "3junpp2@dev.familyone.io";
     public static String name1 = "Ravi";
     public static String error = "An account with this email address already exists. We’ve sent you a login email. Check your inbox.";
+    public static String username  = "testing@dev.familyone.io";
+    public static String password  = "6rd6rxr9";
+    
+    
     
 }

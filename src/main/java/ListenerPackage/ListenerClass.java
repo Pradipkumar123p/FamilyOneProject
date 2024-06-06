@@ -28,7 +28,7 @@ public class ListenerClass extends ExtendManager implements ITestListener{
 
 	       test.log(Status.FAIL, "Test CASE Failed is - " + result.getName()); 
 
-	       test.log(Status.FAIL, "Test CASE Failed is " + result.getThrowable()); 
+	       test.log(Status.FAIL, "Test CASE Failed is - " + result.getThrowable()); 
 
 	       String screenshotPath = "";  
 	    

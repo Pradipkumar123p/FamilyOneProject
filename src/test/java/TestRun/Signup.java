@@ -18,13 +18,13 @@ import Resources.ConstantMethod;
 public class Signup extends BaseClass{
 	
 	@Test(invocationCount = 1)
-	void Runsignup() throws InterruptedException   {
+	void Verifysignup() throws InterruptedException   {
 		
 		FamilypageobjectModel obj = new FamilypageobjectModel(driver);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		Thread.sleep(1000);
-		obj.signup().click();
+		obj.signuplogin().click();
 		Thread.sleep(1000);
 		obj.signup1().click();
 		
@@ -110,7 +110,7 @@ public class Signup extends BaseClass{
 		
 		String monthname ="";
 		
-		while(!(monthname.equals("April 2024")))  {
+		while(!(monthname.equals("May 2023")))  {
 			
 			obj.clicknext().click();
 			Thread.sleep(1000);

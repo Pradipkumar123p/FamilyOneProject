@@ -45,7 +45,7 @@ public class BaseClass {
 		   
 		   ChromeOptions op = new ChromeOptions();
 		   
-		   op.addArguments("--remote-allow-origins=*","--incognito");
+		   op.addArguments("--remote-allow-origins=*");
 		   op.setBinary("C:\\Users\\nizam\\Downloads\\chrome-win64\\chrome-win64\\chrome.exe");
 		   
 		   driver = new ChromeDriver(op);
