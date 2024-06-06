@@ -8,8 +8,6 @@
   <test thread-count="5" name="FamilyOne" parallel="methods">
     <classes>
       <class name="TestRun.Signup"/>
-      <class name="TestRun.SignupViaAnotherway">
-	  </class>
-    </classes>
+	      </classes>
   </test> <!-- FamilyOne -->
 </suite> <!-- Suite -->
