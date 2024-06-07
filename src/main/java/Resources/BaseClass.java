@@ -96,7 +96,7 @@ public class BaseClass {
 	  @AfterMethod
 		public void teardown(ITestResult result) throws IOException{
 			
-		  driver.manage().window().minimize();
+		  driver.manage().window().fullscreen();
 		  
 	   
 	  }

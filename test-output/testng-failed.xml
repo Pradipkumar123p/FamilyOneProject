@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestRun.SignInByLink">
+      <class name="TestRun.Freebies">
         <methods>
           <include name="aftersuite"/>
+          <include name="Verifyfreebies"/>
           <include name="openURL"/>
-          <include name="VerifysignIn"/>
           <include name="teardown"/>
           <include name="beforesuite"/>
         </methods>
-      </class> <!-- TestRun.SignInByLink -->
+      </class> <!-- TestRun.Freebies -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

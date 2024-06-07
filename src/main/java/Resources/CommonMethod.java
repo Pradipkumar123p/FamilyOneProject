@@ -68,7 +68,23 @@ public class CommonMethod {
 	
 	
 	
-       
+       public static void handleselection3(List<WebElement> az,String idx, WebDriver d)  {
+   		
+         	List<WebElement> as=az;
+	
+           for(WebElement v1:as)    {
+	  
+	  
+           if(v1.getText().equalsIgnoreCase(idx))		{	
+	 
+	    	      v1.click();
+	    	      break;
+	    	      
+	      }
+          
+    }
+	
+ }
        
        
        

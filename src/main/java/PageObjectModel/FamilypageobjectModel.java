@@ -53,7 +53,7 @@ public class FamilypageobjectModel {
 	
 	
 	
-	//SignIn
+	//SignIn by email
 	By login = By.xpath("(//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary'])[2]");
 	By emailf = By.xpath("//input[@placeholder='Email Address']");
 	By login1 = By.xpath("//span[contains(text(),'Log in')]");
@@ -61,14 +61,15 @@ public class FamilypageobjectModel {
 	By password = By.xpath("//input[@type='password']");
 	By checkbox = By.xpath("//div[@class='v-Checkbox-icon']");
 	By login3 = By.xpath("//span[contains(text(),'Log in')]");
-	By matching = By.xpath("//span[contains(text(),'🔑Login🔑 - family.one')]");
+//	By matching = By.xpath("//span[contains(text(),'🔑Login🔑 - family.one')]");
+	By matching = By.xpath("//div[@class='v-MailboxItem-preview u-truncate']");
 	By emailvalid = By.xpath("//span[@title='3junpp1@dev.familyone.io']");
 	By emailvalid1 = By.xpath("//h2[contains(text(),'familyone.io')]");
 	By emaillogin = By.xpath("//a[contains(text(),'Login')]");
 	
 	
 	
-	
+	//SignIn by password
 	By setting = By.xpath("(//div[@class='webMenu']//ul//li)[4]");
 	By setting1 = By.xpath("(//div[@class='edit_contentLeft'])[2]");
 	By changepass = By.xpath("(//div[@class='setng_contentLeft'])[2]");
@@ -77,6 +78,27 @@ public class FamilypageobjectModel {
 	By continue3 = By.xpath("//span[contains(text(),'Continue')]");
 	By logout = By.xpath("//span[contains(text(),'Log Out')]");
 	By popup = By.xpath("//div[@class='unknwnchild_content unknwnchild_contentNw']//img");
+	
+	
+	//Freebies
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

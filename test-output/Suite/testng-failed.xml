@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite time-out="500" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="ListenerPackage.ListenerClass"/>
   </listeners>
-  <test thread-count="5" parallel="methods" name="FamilyOne(failed)">
+  <test time-out="500" thread-count="5" parallel="methods" name="FamilyOne(failed)">
     <classes>
-      <class name="TestRun.Signup">
-        <methods>
-          <include name="aftersuite"/>
-          <include name="openURL"/>
-          <include name="Runsignup"/>
-          <include name="teardown"/>
-          <include name="beforesuite"/>
-        </methods>
-      </class> <!-- TestRun.Signup -->
       <class name="TestRun.SignupViaAnotherway">
         <methods>
           <include name="aftersuite"/>
@@ -24,6 +15,33 @@
           <include name="beforesuite"/>
         </methods>
       </class> <!-- TestRun.SignupViaAnotherway -->
+      <class name="TestRun.SignInByPassword">
+        <methods>
+          <include name="aftersuite"/>
+          <include name="openURL"/>
+          <include name="teardown"/>
+          <include name="beforesuite"/>
+          <include name="verifySignInByPassword"/>
+        </methods>
+      </class> <!-- TestRun.SignInByPassword -->
+      <class name="TestRun.Signup">
+        <methods>
+          <include name="aftersuite"/>
+          <include name="openURL"/>
+          <include name="teardown"/>
+          <include name="Verifysignup"/>
+          <include name="beforesuite"/>
+        </methods>
+      </class> <!-- TestRun.Signup -->
+      <class name="TestRun.SignInByLink">
+        <methods>
+          <include name="aftersuite"/>
+          <include name="openURL"/>
+          <include name="VerifysignIn"/>
+          <include name="teardown"/>
+          <include name="beforesuite"/>
+        </methods>
+      </class> <!-- TestRun.SignInByLink -->
     </classes>
   </test> <!-- FamilyOne(failed) -->
 </suite> <!-- Failed suite [Suite] -->
