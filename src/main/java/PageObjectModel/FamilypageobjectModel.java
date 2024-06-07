@@ -61,6 +61,22 @@ public class FamilypageobjectModel {
 	By password = By.xpath("//input[@type='password']");
 	By checkbox = By.xpath("//div[@class='v-Checkbox-icon']");
 	By login3 = By.xpath("//span[contains(text(),'Log in')]");
+	By matching = By.xpath("//span[contains(text(),'🔑Login🔑 - family.one')]");
+	By emailvalid = By.xpath("//span[@title='3junpp1@dev.familyone.io']");
+	By emailvalid1 = By.xpath("//h2[contains(text(),'familyone.io')]");
+	By emaillogin = By.xpath("//a[contains(text(),'Login')]");
+	
+	
+	
+	
+	By setting = By.xpath("(//div[@class='webMenu']//ul//li)[4]");
+	By setting1 = By.xpath("(//div[@class='edit_contentLeft'])[2]");
+	By changepass = By.xpath("(//div[@class='setng_contentLeft'])[2]");
+	By newpass = By.xpath("//input[@name='password']");
+	By conformpass = By.xpath("//input[@name='confirm_password']");
+	By continue3 = By.xpath("//span[contains(text(),'Continue')]");
+	By logout = By.xpath("//span[contains(text(),'Log Out')]");
+	By popup = By.xpath("//div[@class='unknwnchild_content unknwnchild_contentNw']//img");
 	
 	
 	
@@ -336,12 +352,99 @@ public class FamilypageobjectModel {
 		return driver.findElement(checkbox);
 	}
    
+   public WebElement clicklogin3()   {
+	   
+	   
+	   return driver.findElement(login3);
+   }
    
-   public WebElement clicklogin3()  {
+   
+   
+   public List<WebElement> clickmatching ()  {
+	   
+	   return driver.findElements(matching);
+   }
+   
+   
+   public WebElement emailvalidation()  {
 		
-		return driver.findElement(login3);
+		return driver.findElement(emailvalid);
 	}
    
+   
+   public WebElement emailvalidation1()  {
+		
+		return driver.findElement(emailvalid1);
+	}
+   
+   
+   
+   
+   public WebElement clickemaillogin()   {
+	   
+	   
+	   return driver.findElement(emaillogin);
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   public WebElement clicksetting()  {
+		
+		return driver.findElement(setting);
+	}
+   
+   
+   public WebElement clicksetting1()  {
+		
+		return driver.findElement(setting1);
+	}
+   
+   
+   public WebElement clickchangepassword()  {
+		
+		return driver.findElement(changepass);
+	}
+   
+   
+   
+   public WebElement enternewpass()  {
+		
+		return driver.findElement(newpass);
+	}
+   
+   
+   public WebElement enterconfirmpassword()  {
+		
+		return driver.findElement(conformpass);
+	}
+   
+   
+   public WebElement clickcontinue3()  {
+		
+		return driver.findElement(continue3);
+	}
+   
+   
+   public WebElement clicklogout()  {
+		
+		return driver.findElement(logout);
+	}
+   
+   
+   public WebElement handlepopup()  {
+		
+		return driver.findElement(popup);
+	}
    
    
    
