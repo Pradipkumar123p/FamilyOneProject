@@ -4,7 +4,8 @@ import java.time.Duration;
 
 import org.testng.annotations.Test;
 
-import PageObjectModel.FamilypageobjectModel;
+import PageObjectModel.SignupPageObjectModel;
+import PageObjectModel.SignInByPasswordPageObjectModel;
 import Resources.BaseClass;
 import Resources.CommonMethod;
 import Resources.ConstantMethod;
@@ -15,7 +16,8 @@ public class SignInByPassword  extends BaseClass   {
 	    @Test
 	   void verifySignInByPassword() throws InterruptedException    {
 		   
-		   FamilypageobjectModel obj = new FamilypageobjectModel(driver);
+		   SignupPageObjectModel obj = new SignupPageObjectModel(driver);
+		   SignInByPasswordPageObjectModel obj1 = new SignInByPasswordPageObjectModel(driver);
 			
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			
@@ -126,37 +128,37 @@ public class SignInByPassword  extends BaseClass   {
 			
 			obj.clicknext1().click();
 		   
-		   obj.clicksetting().click();
+		   obj1.clicksetting().click();
 		   
-		   obj.clicksetting1().click();
+		   obj1.clicksetting1().click();
 		   
-		   obj.clickchangepassword().click();
+		   obj1.clickchangepassword().click();
 		   
-		   obj.enternewpass().sendKeys(ConstantMethod.newpassword);
-		   obj.enterconfirmpassword().sendKeys(ConstantMethod.confirmpassword);
+		   obj1.enternewpass().sendKeys(ConstantMethod.newpassword);
+		   obj1.enterconfirmpassword().sendKeys(ConstantMethod.confirmpassword);
 		   
-		   obj.clickcontinue3().click();
+		   obj1.clickcontinue3().click();
 		   
-		   obj.clicklogout().click();
+		   obj1.clicklogout().click();
 		   
 		   Thread.sleep(1000);
 		   obj.signuplogin().click();
 			
-		   obj.clicklogin().click();
+		   obj1.clicklogin().click();
 		   
-		   obj.enteremailf().sendKeys(ConstantMethod.validemail);
+		   obj1.enteremailf().sendKeys(ConstantMethod.validemail);
 		   
-		   obj.clicklogin3().click();
+		   obj1.clicklogin3().click();
 		   
-		   obj.enternewpass().sendKeys(ConstantMethod.newpassword);
+		   obj1.enternewpass().sendKeys(ConstantMethod.newpassword);
 		   
-		   obj.clicklogin3().click();
+		   obj1.clicklogin3().click();
 		   
 		   Thread.sleep(1000);
 		   
 		   try {
 		   
-		   obj.handlepopup().click();
+		   obj1.handlepopup().click();
 		   
 		   }
 		   catch (Exception e) {

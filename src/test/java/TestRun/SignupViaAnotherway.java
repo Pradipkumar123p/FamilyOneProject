@@ -8,7 +8,7 @@ import org.openqa.selenium.devtools.idealized.Javascript;
 import org.openqa.selenium.remote.internal.WebElementToJsonConverter;
 import org.testng.annotations.Test;
 
-import PageObjectModel.FamilypageobjectModel;
+import PageObjectModel.SignupPageObjectModel;
 import Resources.BaseClass;
 import Resources.CommonMethod;
 
@@ -17,7 +17,7 @@ public class SignupViaAnotherway extends BaseClass{
 	   @Test
 	  void Runsignup1()  {
 		  
-		  FamilypageobjectModel obj = new FamilypageobjectModel(driver);
+		  SignupPageObjectModel obj = new SignupPageObjectModel(driver);
 		  
 		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		  

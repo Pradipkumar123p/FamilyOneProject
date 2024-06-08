@@ -1,0 +1,5 @@
+FamilyOneProjact1 - Build # 3 - Still Failing:
+
+Check console output at http://localhost:8080/job/FamilyOneProjact1/3/ to view the results.
+
+This is an auto generated email Don't reply

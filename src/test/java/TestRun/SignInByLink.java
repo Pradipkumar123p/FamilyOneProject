@@ -10,7 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.testng.annotations.Test;
 
-import PageObjectModel.FamilypageobjectModel;
+import PageObjectModel.SignupPageObjectModel;
+import PageObjectModel.SignInByLinkpageObjectModel;
 import Resources.BaseClass;
 import Resources.CommonMethod;
 import Resources.ConstantMethod;
@@ -20,7 +21,7 @@ public class SignInByLink extends BaseClass{
 	@Test
 	void VerifysignIn() throws InterruptedException   {
 		
-        FamilypageobjectModel obj = new FamilypageobjectModel(driver);
+		SignInByLinkpageObjectModel obj = new SignInByLinkpageObjectModel(driver);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		

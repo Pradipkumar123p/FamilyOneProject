@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import PageObjectModel.FamilypageobjectModel;
+import PageObjectModel.SignupPageObjectModel;
 import Resources.BaseClass;
 import Resources.CommonMethod;
 import Resources.ConstantMethod;
@@ -20,7 +20,7 @@ public class Signup extends BaseClass{
 	@Test(invocationCount = 1)
 	void Verifysignup() throws InterruptedException   {
 		
-		FamilypageobjectModel obj = new FamilypageobjectModel(driver);
+		SignupPageObjectModel obj = new SignupPageObjectModel(driver);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		Thread.sleep(1000);
@@ -113,7 +113,7 @@ public class Signup extends BaseClass{
 		while(!(monthname.equals("May 2023")))  {
 			
 			obj.clicknext().click();
-			Thread.sleep(1000);
+			Thread.sleep(500);
 			obj.matchtitle();
 			
 			monthname = obj.matchtitle().getText();
