@@ -127,6 +127,32 @@ public class BaseClass {
 	     }
 	  
 	  
+	    public static String randomFirstName() {
+		  
+			String generatestring = RandomStringUtils.randomAlphabetic(2);
+				 
+			String Name = "Automation-" + generatestring;
+				 a++;
+			 
+				 System.out.println(Name);
+		  
+		     return Name ;
+	     }
+	    
+	    
+	    public static String randomLastName() {
+			  
+			String generatestring = RandomStringUtils.randomAlphabetic(2);
+				 
+			String Name1 = "Test-" + generatestring;
+				 a++;
+			 
+				 System.out.println(Name1);
+		  
+		     return Name1 ;
+	     }
+	  
+	  
 	  
          public static String Getcurrenttime()  {
 		  

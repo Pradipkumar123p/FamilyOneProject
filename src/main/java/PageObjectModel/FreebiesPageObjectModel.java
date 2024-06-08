@@ -25,7 +25,19 @@ public class FreebiesPageObjectModel {
 		By month = By.xpath("//div[@class='MuiPickersSlideTransition-transitionContainer MuiPickersCalendarHeader-transitionContainer']");
 		By date = By.xpath("//div[@class='MuiPickersSlideTransition-transitionContainer MuiPickersCalendar-transitionContainer']//div//div//div");
 		By ok = By.xpath("//span[contains(text(),'OK')]");
-		
+		By continues = By.xpath("//span[contains(text(),'Continue')]");
+		By confirm = By.xpath("//span[contains(text(),'Confirm Date')]");
+		By plus = By.xpath("//div[@class='cstmChildPlus']");
+		By addchild = By.xpath("//div[@class='unchild_rght expctChildLast']");
+		By name2 = By.xpath("//input[@placeholder='Name']");
+		By gender2 = By.xpath("//div[@class='addchild_gender']//button");
+		By calender1 = By.xpath("(//div[@class='MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl']//input)[2]");
+		By mnthdate1 = By.xpath("//span[@class='MuiButton-label']//h4");
+		By previous = By.xpath("(//span[@class='MuiIconButton-label'])[1]");
+		By matchmonth1 = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter']");
+		By date1 = By.xpath("//div[@class='MuiPickersSlideTransition-transitionContainer MuiPickersCalendar-transitionContainer']//div//div//div");
+		By ok1 = By.xpath("//span[contains(text(),'OK')]");
+		By matchmonth2 = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter']");
 		
 		
 		
@@ -122,6 +134,80 @@ public class FreebiesPageObjectModel {
 			}  
 		   
 		   
+		   public WebElement clickcontinue()  {
+				
+				return driver.findElement(continues);
+			}  
+		   
+		   
+		   
+		   public WebElement clickconformdate()  {
+				
+				return driver.findElement(confirm);
+			}  
+		   
+		   public WebElement clickplus()  {
+				
+				return driver.findElement(plus);
+			}  
+		   
+		   
+		   public WebElement clickaddchild()  {
+				
+				return driver.findElement(addchild);
+			}  
+		   
+		   public WebElement entername2()  {
+				
+				return driver.findElement(name2);
+			}
+		   
+		   
+		   public List<WebElement> selectgender2 ()  {
+			   
+			   return driver.findElements(gender2);
+		   }
+		     
+		   
+		   public WebElement clickcanlender1()  {
+				
+		 		return driver.findElement(calender1);
+		 	}
+		   
+		   
+		   public WebElement clichmonthdate1()  {
+				
+		 		return driver.findElement(mnthdate1);
+		 	}
+		   
+		   public WebElement clickprevious()  {
+				
+		 		return driver.findElement(previous);
+		 	}
+		   
+		   
+		   public WebElement matchingmonth1()  {
+				
+		 		return driver.findElement(matchmonth1);
+		 	}
+		   
+           public List<WebElement> selectdate1 ()  {
+			   
+			   return driver.findElements(date1);
+		   }
+		   
+           
+           
+		   public WebElement clickok1()  {
+				
+		 		return driver.findElement(ok1);
+		 	}
+		   
+		   
+		   public WebElement matchingmonth2()  {
+				
+				return driver.findElement(matchmonth2);
+			} 
 		   
 		   
 		   
@@ -132,6 +218,4 @@ public class FreebiesPageObjectModel {
 		   
 		   
 		   
-		   
-
 }
