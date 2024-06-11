@@ -22,7 +22,7 @@ public class GiveAwaysPageObjectModel {
 			By images = By.xpath("//div[@class='freebies_iner program_title01 giveAwayWrapTxt ']//label");
 	        By enternow = By.xpath("(//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text contest_enter_fixed  MuiButton-textPrimary']//span)[1]");
 	        By telephone = By.xpath("//input[@type='tel']");
-	        By continue1 = By.xpath("(//button[@class='MuiButto;nBase-root MuiButton-root MuiButton-text MuiButton-textPrimary']//span)[1]");
+	        By continue1 = By.xpath("//span[contains(text(),'Continue')]");
 	        By code = By.xpath("//input[@class='MuiInputBase-input MuiInput-input MuiInputBase-inputHiddenLabel']");
 	        By consent = By.xpath("//span[@class='MuiButton-label']");
 	        
