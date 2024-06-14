@@ -17,7 +17,6 @@ public class ConstantMethod {
     public static String confirmpassword1 = "Sumit123p@4";
     public static String matching = "To login, click the link in this email. Hi Threejun ! To login, click the link in this email. Login Create Password Alternatively, you can copy and paste the following link";
     public static String mobile = "9826242978";
-    public static String code = "825473";
     
     
 }

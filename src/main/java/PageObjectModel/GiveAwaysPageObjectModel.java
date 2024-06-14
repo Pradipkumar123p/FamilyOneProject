@@ -25,7 +25,7 @@ public class GiveAwaysPageObjectModel {
 	        By continue1 = By.xpath("//span[contains(text(),'Continue')]");
 	        By code = By.xpath("//input[@class='MuiInputBase-input MuiInput-input MuiInputBase-inputHiddenLabel']");
 	        By consent = By.xpath("//span[@class='MuiButton-label']");
-	        
+	        By first = By.xpath("//a[@class='cat1Act']//img");
 	        
 	        
 	        
@@ -115,6 +115,13 @@ public class GiveAwaysPageObjectModel {
                public WebElement clickconsent()  {
 				   
 				   return driver.findElement(consent);
+			   }
+               
+               
+               
+               public WebElement clickfirst()  {
+				   
+				   return driver.findElement(first);
 			   }
 			   
 

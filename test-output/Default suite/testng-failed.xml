@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestRun.Giveaways">
+      <class name="TestRun.Freebies">
         <methods>
           <include name="aftersuite"/>
+          <include name="Verifyfreebies"/>
           <include name="openURL"/>
           <include name="teardown"/>
           <include name="beforesuite"/>
-          <include name="verifyGiveAways"/>
         </methods>
-      </class> <!-- TestRun.Giveaways -->
+      </class> <!-- TestRun.Freebies -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

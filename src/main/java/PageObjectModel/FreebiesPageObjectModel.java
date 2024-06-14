@@ -38,9 +38,17 @@ public class FreebiesPageObjectModel {
 		By date1 = By.xpath("//div[@class='MuiPickersSlideTransition-transitionContainer MuiPickersCalendar-transitionContainer']//div//div//div");
 		By ok1 = By.xpath("//span[contains(text(),'OK')]");
 		By matchmonth2 = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter']");
+		By childName1 = By.xpath("//label[contains(text(),'Child 1')]");
+		By childName2 = By.xpath("//label[contains(text(),'Child 2Pradip')]");
+		By childName3 = By.xpath("//label[contains(text(),'Child 3Pradip')]");
+		By first = By.xpath("(//div[@class='webMenu']//ul//li)[1]");
+		By freebies = By.xpath("//div[@class='cmnTabPrgrm freebiesTabClr']//img");
+		By images = By.xpath("//div[@class='freebies_iner program_title01  freeBieWrapTxt']//label");
+		By similac = By.xpath("(//div[@class='freebiesImges']//div//img)[6]");
+		By backing = By.xpath("//div[@class='backLinkWidth']//img");
+		By redeem = By.xpath("//span[@class='MuiButton-label']");
 		
-		
-		
+	
 		
 		
 		public FreebiesPageObjectModel(WebDriver driver2)   {
@@ -210,12 +218,75 @@ public class FreebiesPageObjectModel {
 			} 
 		   
 		   
+          public WebElement verifychildname1 ()  {
+			   
+			   return driver.findElement(childName1);
+		   }
 		   
 		   
+          
+          public WebElement verifychildname2 ()  {
+			   
+			   return driver.findElement(childName2);
+		   }
 		   
 		   
+          
+          public WebElement verifychildname3 ()  {
+			   
+			   return driver.findElement(childName3);
+		   }
+		   
+          
+		   public WebElement clickfirst()  {
+				
+				return driver.findElement(first);
+			} 
 		   
 		   
+
+		   public WebElement clickfreebies()  {
+				
+				return driver.findElement(freebies);
+			} 
 		   
+		   
+          public List<WebElement> selectimage ()  {
+			   
+			   return driver.findElements(images);
+		   }
+          
+          
+          public WebElement clicksimilac()  {
+				
+				return driver.findElement(similac);
+			} 
+          
+          
+          
+          public WebElement clickbacking()  {
+				
+				return driver.findElement(backing);
+			} 
+          
+          
+          public WebElement clickredeem()  {
+				
+				return driver.findElement(redeem);
+			} 
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
 		   
 }

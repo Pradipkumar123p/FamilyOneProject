@@ -68,6 +68,8 @@ public class Giveaways extends BaseClass{
 		    
 		    obj.clickenternow().click();
 		    
+		    try   {
+		    
 		    Thread.sleep(2000);
 		    obj.entertelephone().sendKeys(ConstantMethod.mobile);
 		    Thread.sleep(2000);
@@ -77,8 +79,6 @@ public class Giveaways extends BaseClass{
 		    JavascriptExecutor jse = (JavascriptExecutor) driver;
    		    jse.executeScript("arguments[0].click()", we);
 		    Thread.sleep(2000);
-		    
-		    try {
 		    
 	        obj.entercode().sendKeys(testSendingRequestBody());
 		    Thread.sleep(1000);
@@ -90,6 +90,105 @@ public class Giveaways extends BaseClass{
 		    	System.out.println("add successfully");
 			} 
 		    
+		    Thread.sleep(1000);
+		    obj.clickfirst().click();
+		    
+		    Thread.sleep(1000);
+		    obj.clickaways().click();
+		    
+		    try {
+		    	
+		    Thread.sleep(1000);
+		    CommonMethod.handleselection(obj.selectimage(), "Win a $5,000 RESP from CST Savings Inc.", driver);
+		    
+		    }
+		    catch (Exception e) {
+				
+		     	List<WebElement> as=obj.selectimage();
+				
+	            for(WebElement v1:as)    {
+		  
+		  
+                if(v1.getText().equalsIgnoreCase("Win a $5,000 RESP from CST Savings Inc."))		{	
+                	
+                   JavascriptExecutor jsee = (JavascriptExecutor) driver;
+             	   jsee.executeScript("arguments[0].click()", v1);
+                	
+		    	      v1.click();
+		    	      break;
+		          }
+	           } 
+			}
+		    
+		    Thread.sleep(1000);
+		    obj.clickenternow().click();
+		    
+		    Thread.sleep(1000);
+		    obj.clickfirst().click();
+		    
+		    Thread.sleep(1000);
+		    obj.clickaways().click();
+		    
+		    try {
+		    	
+			    Thread.sleep(1000);
+			    CommonMethod.handleselection(obj.selectimage(), "Win a $1,200 Feeding Time Bundle from CST Savings Inc.", driver);
+			    
+			    }
+			    catch (Exception e) {
+					
+			     	List<WebElement> as=obj.selectimage();
+					
+		            for(WebElement v1:as)    {
+			  
+			  
+	                if(v1.getText().equalsIgnoreCase("Win a $1,200 Feeding Time Bundle from CST Savings Inc."))		{	
+	                	
+	                   JavascriptExecutor jsee = (JavascriptExecutor) driver;
+	             	   jsee.executeScript("arguments[0].click()", v1);
+	                	
+			    	      v1.click();
+			    	      break;
+			          }
+		           } 
+				}
+		    
+		    
+		    Thread.sleep(1000);
+		    obj.clickenternow().click();
+		    
+		    Thread.sleep(1000);
+		    obj.clickfirst().click();
+		    
+		    Thread.sleep(1000);
+		    obj.clickaways().click();
+		    
+		    try {
+		    	
+			    Thread.sleep(1000);
+			    CommonMethod.handleselection(obj.selectimage(), "Win a $5,000 RESP from CST Savings Inc.", driver);
+			    
+			    }
+			    catch (Exception e) {
+					
+			     	List<WebElement> as=obj.selectimage();
+					
+		            for(WebElement v1:as)    {
+			  
+			  
+	                if(v1.getText().equalsIgnoreCase("Win a $5,000 RESP from CST Savings Inc."))		{	
+	                	
+	                   JavascriptExecutor jsee = (JavascriptExecutor) driver;
+	             	   jsee.executeScript("arguments[0].click()", v1);
+	                	
+			    	      v1.click();
+			    	      break;
+			          }
+		           } 
+				}
+		    
+		    Thread.sleep(1000);
+		    obj.clickenternow().click();
 	  }
 	    
 	    
