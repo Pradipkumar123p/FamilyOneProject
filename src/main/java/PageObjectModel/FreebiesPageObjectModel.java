@@ -47,8 +47,9 @@ public class FreebiesPageObjectModel {
 		By similac = By.xpath("(//div[@class='freebiesImges']//div//img)[6]");
 		By backing = By.xpath("//div[@class='backLinkWidth']//img");
 		By redeem = By.xpath("//span[@class='MuiButton-label']");
-		
-	
+		By yes1 = By.xpath("//div[@class='editChildInfo_stper 3434']//button");
+		By yes2 = By.xpath("//div[@class='editChildInfo_stper2']//button");
+		By yes3 = By.xpath("//div[@class='editChildInfo_stper3']//button");
 		
 		
 		public FreebiesPageObjectModel(WebDriver driver2)   {
@@ -276,12 +277,21 @@ public class FreebiesPageObjectModel {
 			} 
           
           
+          public WebElement clickyes1()  {
+				
+				return driver.findElement(yes1);
+			} 
+          
+          public WebElement clickyes2()  {
+				
+				return driver.findElement(yes2);
+			} 
           
           
-          
-          
-          
-          
+          public WebElement clickyes3()  {
+				
+				return driver.findElement(yes3);
+			} 
           
           
           

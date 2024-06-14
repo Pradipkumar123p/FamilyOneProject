@@ -246,6 +246,7 @@ public class Freebies extends  BaseClass   {
    			  
  			  }
    			  
+ 			  
  			  Thread.sleep(1000);
  			  obj.clickfirst().click();
  			 
@@ -283,8 +284,7 @@ public class Freebies extends  BaseClass   {
 				  
 				  WebElement ab = obj.clickredeem();
 				  JavascriptExecutor jse = (JavascriptExecutor) driver;
-        		  jse.executeScript("arguments[0].click()", ab);
-        		  
+        		  jse.executeScript("arguments[0].click()", ab);  
         		  
 			  }
 			  else  {
@@ -294,8 +294,14 @@ public class Freebies extends  BaseClass   {
  			                                        
 			  }
  			  
-			  
-			  
+             Thread.sleep(500);
+             obj.clickyes1().click();
+             
+             Thread.sleep(500);
+             obj.clickyes2().click();  
+             
+             Thread.sleep(500);
+             obj.clickyes3().click();
 		
 	}
 	
