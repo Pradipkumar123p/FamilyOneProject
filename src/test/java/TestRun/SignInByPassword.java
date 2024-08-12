@@ -63,7 +63,7 @@ public class SignInByPassword  extends BaseClass   {
 			obj.continue1().click();
 			
 			obj.parentclick().click();
-			
+	                                                                     //https://d2ugykmbq84odw.cloudfront.net/
 			obj.clildclick().click();
 			
 			obj.entername().clear();

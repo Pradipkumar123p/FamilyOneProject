@@ -13,9 +13,9 @@ public class SignupPageObjectModel {
   //Signup function
 	By sign = By.xpath("(//a[normalize-space()='Log In / Sign Up'])[1]");
 	By sign1 = By.xpath("//span[normalize-space()='Sign Up']");
-	By first  = By.xpath("//input[@placeholder='First Name']");
-	By last = By.xpath("//input[@placeholder='Last Name']");
-	By email = By.xpath("//input[@placeholder='Email']");
+	By first  = By.xpath("//input[@type='text']");
+	By last = By.xpath("(//input[@type='text'])[2]");
+	By email = By.xpath("//input[@type='email']");
 	By conti = By.xpath("//span[@class='MuiButton-label']");
 	By error = By.xpath("//p[@class='error_message']");
 	By activate = By.xpath("(//div[@class='call_link']//button//span)[1]");

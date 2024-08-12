@@ -7,7 +7,7 @@ public class ConstantMethod {
     public static String email1 = "3junpp1@dev.familyone.io";
     public static String email2 = "3junpp2@dev.familyone.io";
     public static String validmail1 = "12sdfds@familyone.io";
-    public static String validemail1 = "23455@dev.familyone.io";
+    public static String validemail1 = "naveen123456@dev.familyone.io";
     public static String validemail = "06-06VcAN0@dev.familyone.io";
     public static String name1 = "Ravi";
     public static String name2 = "Naveen";

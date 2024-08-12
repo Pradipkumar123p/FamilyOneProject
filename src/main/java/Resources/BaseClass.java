@@ -48,7 +48,7 @@ public class BaseClass {
 		   op.addArguments("--remote-allow-origins=*");
 		   op.setBinary("C:\\Users\\nizam\\Downloads\\chrome-win64\\chrome-win64\\chrome.exe");
 		   
-		   driver = new ChromeDriver(op);
+		   driver = new ChromeDriver(op); 
 		   
 		   
 		  }   
@@ -96,7 +96,7 @@ public class BaseClass {
 	  @AfterMethod
 		public void teardown(ITestResult result) throws IOException{
 			
-		  driver.manage().window().fullscreen();
+		  driver.manage().window().minimize();
 		  
 	   
 	  }
